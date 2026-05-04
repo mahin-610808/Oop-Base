@@ -24,8 +24,6 @@ class TheoryExam extends Exam{
         System.out.println("Theory Exam will Started");
     }
     public  void evaluate(){
-
-
         System.out.println("Evaluation based on written answers");
     }
     public void showResult(){
@@ -33,23 +31,18 @@ class TheoryExam extends Exam{
         System.out.println("Theory Exam = " + mark + " " + "marks");
     }
 }
-
 class VivaExam extends  Exam{
     int mark=90;
     public void startExam(){
         System.out.println("Viva Exam will Started");
     }
     public  void evaluate(){
-
-
         System.out.println("Evaluation based on oral performance");
     }
     public void showResult(){
-
         System.out.println("Viva Exam = " + mark + " " + "marks");
     }
 }
-
 public class Task3 {
     public static void main(String[] args) {
         Exam[] e={new ProgrammingExam(),

@@ -1,6 +1,4 @@
-
 abstract class Delivery{
-
     abstract void calculateCharge();
 }
 class BikeDelivery extends Delivery{
@@ -30,7 +28,6 @@ class DroneDelivery extends Delivery{
         System.out.println("Drone:"+rate+" per km");
     }
 }
-
 public class Task8 {
     public static void main(String[] args) {
         Delivery[] d={

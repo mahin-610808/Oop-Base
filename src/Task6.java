@@ -40,8 +40,6 @@ class airConditioner extends smartDevice{
         System.out.println("AirConditioner:"+power+"W");
     }
 }
-
-
 public class Task6 {
     public static void main(String[] args) {
  smartDevice[] sd={

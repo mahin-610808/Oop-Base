@@ -1,10 +1,10 @@
-abstract class SmartDevice{
+abstract class device1{
     abstract void turnOn();
     abstract void turnOff();
     abstract void showStatus();
 
 }
-class Light extends SmartDevice{
+class Light extends device1{
     int brightness;
     public void turnOn(){
         brightness=70;
@@ -20,7 +20,7 @@ class Light extends SmartDevice{
     }
 
 }
-class Fan extends SmartDevice{
+class Fan extends device1{
     int speed;
     public void turnOn(){
         speed=3;
@@ -35,7 +35,7 @@ class Fan extends SmartDevice{
 
     }
 }
-class AirConditioner extends SmartDevice{
+class AirConditioner extends device1{
     float temp;
     public void turnOn(){
         temp=24;
@@ -50,29 +50,13 @@ class AirConditioner extends SmartDevice{
 
     }
 }
-
-
-
 public class Task1 {
     public static void main(String[] args) {
-//        Light l=new Light();
-//        Fan f=new Fan();
-//        AirConditioner ac=new AirConditioner();
-//        l.turnOn();
-//       // l.turnOff();
-//        l.showStatus();
-//        f.turnOn();
-//        //f.turnOff();
-//        f.showStatus();
-//        ac.turnOn();
-//        //ac.turnOff();
-//        ac.showStatus();
-        //polymorphism
-        SmartDevice [] sd={new Light(),
+       device1 [] sd={new Light(),
                 new Fan(),
                 new AirConditioner()
         };
-        for(SmartDevice x : sd){
+        for(device1 x : sd){
             x.turnOn();
             x.showStatus();
             System.out.println();

@@ -3,7 +3,6 @@ abstract  class Loan{
     abstract void calculateInterest();
 }
 class HomeLoan extends Loan{
-
     double interestRate=0.08;
     public void calculateInterest(){
         double interest=(loanAmount*interestRate);
